@@ -11,6 +11,8 @@ describe('Central de atendimento ao Cliente TAT', function(){
         const longText = 'teste,teste,teste,teste,teste,teste,teste,teste,teste,teste,teste,teste,teste,teste,teste,teste,teste,teste,teste,teste,teste,teste,'
         // cy.get('#firstName').type(Cypress.env('userFirstName'))
         // cy.get('#lastName').type(Cypress.env('userLastName'), {log: false})
+        cy.get('#firstName').type('Primeiro')
+        cy.get('#lastName').type('Último', {log: false})
         cy.get('#email').type('primeiro@ultimo.com')
         cy.get('#open-text-area').type(longText, {delay: 0})
         cy.get('button[type="submit"]').click()
