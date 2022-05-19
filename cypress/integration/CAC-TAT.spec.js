@@ -131,5 +131,10 @@ describe('Central de atendimento ao Cliente TAT', function(){
         cy.get('#privacy a').click()
         cy.contains('Talking About Testing')
     })
+    it('should remove attribut target and click on the link', ()=> {
+        cy.get('#privacy a').should('have.attr', 'target', '_blank').invoke('removeAttr', 'target').should('not.have.attr', 'target')
+        cy.get('#privacy a').click()
+        cy.contains('Talking About Testing')
+    })
 })
 
