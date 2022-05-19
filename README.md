@@ -1,29 +1,31 @@
-# Testes automatizados com Cypress - Básico
+# Cypress basic v2
 
-👋 Seja bem-vindo(a)!
+A simple call center application. containing a form and a privacy policy page. It is a fork Walmyr Filho's project - CAT TAT - studying about Cypress basic.
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai adorar este curso. ❤️
+## Pre-requirements
 
-## O que você vai aprender
+It is required to have NODE.JS and NPM installed to run this project.
 
-Durante o curso de testes automatizados com Cypress (básico), você vai aprender:
+> I used versions `16.15.0` and `8.5.5` of Node.js and npm, respectively. I used yarn instead npm in version `1.22.18`. I suggesr you use this versions or later.
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar _upload_ de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como executar os testes em um _pipeline_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
+You will need a browser too.
 
-## Vamos começar?
+> I used Google Chrome
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+## Installation
 
-___
+Run `npm install` or `yarn` (or `npm i` for short form) to install the dev dependencies
 
-Este é mais um curso da [**Escola Talking About Testing**](https://udemy.com/user/walmyr).
+## Tests
+
+You can run tests si,ulating a desktop oe mobile viewport.
+
+### Desktop
+
+Run `npm test`or `yarn test` (or `npm t`for the short version) to run the test in headless mode on a desktop viewport.
+
+Or, run `npm run cy:open` or `yarn cy:open` to open Cypress in interactive mode on desktop viewport.
+
+### Mobile
+
+You can run tests on mobile viewport using `npm test:mobile` or `yarn test:mobile` in headless mode and `npm run cy:open:mobile` or `yarn cy:open:mobile` to run tests on interactive mode.
